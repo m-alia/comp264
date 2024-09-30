@@ -1,3 +1,8 @@
+// I Malia Kuykendall certify that this programming assignment reflects my own work,
+// without the use of any external individuals (other than course/department staff ), generative-AI,
+// or any other forbidden resources. I understand/accept the consequences of cheating as outlined
+// in the course syllabus.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -81,11 +86,6 @@ int * rounded_vals(float arr [], int size) {
 		roundedArr[i] = round(arr[i]);
 	}
 
-	for (i = 0; i < size; i++) {
-		printf("%d ", roundedArr[i]);
-	}
-	printf("\n");
-
 	return roundedArr;
 }
 
@@ -106,16 +106,10 @@ char * ascii(float arr [], int size) {
 		}
 	}
 
-	for (i = 0; i < size; i++) {
-		printf("%c ", asciiArr[i]);
-	}
-	printf("\n");
-
 	return asciiArr;
 }
 
 int main(int argc, char * argv[ ] ) {
-
 	int size = argc - 1;
 	float arr[size];
 
